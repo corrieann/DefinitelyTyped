@@ -1171,7 +1171,7 @@ declare namespace MathJax {
         /*Which font to prefer out of the availableFonts list, when more than one is available on the user’s computer.
         * Set it to null if you want MathJax to use web-based or image fonts.
         */
-        preferredFont?: string;
+        preferredFont?: string|null;
         /*This is the web-based font to use when none of the fonts listed above are available on the user’s computer. The
         * possible values are TeX, STIX-Web, Asana-Math, Neo-Euler, Gyre-Pagella, Gyre-Termes and Latin-Modern. Note
         * that not all mathematical characters are available in all fonts (e.g., Neo-Euler does not include italic
@@ -1181,7 +1181,7 @@ declare namespace MathJax {
         * These fonts are stored in the fonts/HTML-CSS folder in the MathJax directory. Set this to null to disable web
         * fonts.
         */
-        webFont?: string;
+        webFont?: string|null;
         /* This is the font to use for image fallback mode (when none of the fonts listed above are available and the
         * browser doesn’t support web-fonts via the @font-face CSS directive). Note that currently only the TeX font is
         * available as an image font (they are stored in the fonts/HTML-CSS directory).
@@ -1192,7 +1192,7 @@ declare namespace MathJax {
         * fonts include: IE6 and later, Chrome, Safari3.1 and above, Firefox3.5 and later, and Opera10 and later. Note
         * that Firefox3.0 is not on this list.
         */
-        imageFont?: string;
+        imageFont?: string|null;
         /*This is the font-family CSS value used for characters that are not in the selected font (e.g., for web-based
         * fonts, this is where to look for characters not included in the MathJax web fonts). IE will stop looking after
         * the first font that exists on the system (even if it doesn’t contain the needed character), so order these
